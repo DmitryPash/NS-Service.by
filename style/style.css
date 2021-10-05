@@ -22,6 +22,10 @@ li {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .content {
   flex: 1 0 auto;
 }
@@ -149,6 +153,10 @@ li {
   background-color: #fff;
 }
 
+.catalog {
+  margin-bottom: 100px;
+}
+
 .catalog-h2 {
   font-size: 26px;
   font-weight: 600;
@@ -179,6 +187,22 @@ li {
 .catalog-items img {
   margin-top: 50px;
   margin-bottom: 10px;
+}
+
+.recommend-list {
+  font-family: "Axiforma";
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 80px;
+}
+
+.recommend-list a {
+  color: #575b71;
+  padding-right: 25px;
+}
+
+.recommend-list a:hover {
+  border-bottom: 4px solid #fde037;
 }
 
 .recommend-cards {
