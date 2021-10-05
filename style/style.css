@@ -42,6 +42,8 @@ li {
 .header {
   height: 153px;
   margin-top: 24px;
+  font-family: "Axiforma";
+  font-weight: thin;
 }
 
 .header a {
@@ -141,3 +143,118 @@ li {
 }
 
 /* End Nav */
+
+/* Catalog */
+.main {
+  background-color: #fff;
+}
+
+.catalog-h2 {
+  font-size: 26px;
+  font-weight: 600;
+  font-family: "Axiforma";
+  padding: 90px 0px 50px 0px;
+}
+
+.catalog-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.catalog-items {
+  height: 247px;
+  width: 247px;
+  box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.137);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  font-family: "Axiforma", "Medium";
+  font-weight: 400;
+}
+
+.catalog-items img {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.recommend-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.recommend-item {
+  height: 520px;
+  width: 247px;
+  border: 1px solid #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 0px;
+}
+
+.item-button {
+  height: 45px;
+  width: 150px;
+  background-color: #f1c731;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+}
+/* End Catalog */
+
+/* Footer */
+.footer {
+  background-color: #484a57;
+  color: white;
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+}
+
+.footer ul {
+  padding: 0;
+}
+.footer-info {
+  width: 100%;
+  display: table;
+  /* display: flex; */
+  /* justify-content: space-around; */
+  background-color: #484a57;
+  height: 270px;
+  padding-top: 35px;
+}
+.footer-buy {
+  display: table-cell;
+  /* align-items: center; */
+}
+.footer ul {
+  list-style-type: none;
+}
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+.footer-buy ul li:first-child {
+  padding-bottom: 30px;
+}
+.footer-buy ul li a {
+  color: white;
+}
+.footer-info-more {
+  padding: 10px 0;
+  display: flex;
+  background-color: #393c4c;
+  width: 100%;
+}
+.info-adress {
+  max-width: 369px;
+}
+.col {
+  width: 20%;
+}
+/* End Footer */
