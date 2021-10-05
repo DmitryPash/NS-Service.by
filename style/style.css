@@ -185,6 +185,7 @@ a {
 }
 
 .catalog-items img {
+  margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 10px;
 }
@@ -198,7 +199,7 @@ a {
 
 .recommend-list a {
   color: #575b71;
-  padding-right: 25px;
+  margin-right: 25px;
 }
 
 .recommend-list a:hover {
@@ -209,6 +210,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 30px;
+  font-family: "Open Sans";
 }
 
 .recommend-item {
@@ -218,8 +220,54 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  padding: 40px 0px;
+  /* justify-content: space-around; */
+  padding: 40px 10px;
+}
+
+.recommend-item img {
+  padding-bottom: 60px;
+}
+
+.item-text {
+  font-weight: 400;
+  line-height: 1;
+  padding-bottom: 50px;
+}
+
+.item-price {
+  margin-right: auto;
+  font-weight: 800;
+  font-size: 35px;
+  opacity: 0.8;
+}
+
+.item-price span {
+  /* margin-right: auto; */
+  font-weight: 900;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.item-add {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+.item-add-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 75px;
+  border: 2px solid silver;
+  border-radius: 20px;
+}
+
+.item-add-button button {
+  background-color: white;
+  border: none;
 }
 
 .item-button {
@@ -231,6 +279,7 @@ a {
   border: none;
   text-align: center;
 }
+
 /* End Catalog */
 
 /* Footer */
