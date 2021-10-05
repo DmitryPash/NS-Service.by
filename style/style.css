@@ -46,6 +46,7 @@ a {
 .header {
   height: 153px;
   margin-top: 24px;
+  margin-bottom: 20px;
   font-family: "Axiforma";
   font-weight: thin;
 }
@@ -56,6 +57,7 @@ a {
 .header-logo {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .header-logo img {
@@ -66,10 +68,41 @@ a {
   height: 50%;
 }
 
-.header-place input {
-  border: 0px;
-  border-radius: 55px;
-  height: 60px;
+.form-serach form {
+  position: relative;
+  width: 70%;
+}
+
+.form-serach input,
+button {
+  border: none;
+  outline: none;
+  border-radius: 25px;
+}
+
+.form-serach input {
+  width: 100%;
+  height: 42px;
+  /* background: #f9f0da; */
+  padding-left: 15px;
+}
+
+.form-serach button {
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.form-serach button::before {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  color: #f9f0da;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .header-place a {
@@ -86,10 +119,6 @@ a {
 
 .header-place input::placeholder {
   padding-left: 25px;
-}
-
-.header-location {
-  /* display: flex; */
 }
 
 .header-address {
@@ -122,6 +151,9 @@ a {
 
 /* Nav */
 .nav {
+  position: relative;
+  z-index: 1;
+  box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.137);
   background-color: #fff;
   height: 70px;
 }
