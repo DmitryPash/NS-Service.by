@@ -7,6 +7,7 @@ body {
   height: 100%;
   background-color: #f4f5fd;
   /* font-family: "Axiforma"; */
+  font-family: "Monserat", "sans-serif";
 }
 
 body {
@@ -42,8 +43,45 @@ a {
   margin: 0 auto;
 }
 
+.h2 {
+  font-size: 26px;
+  font-weight: 600;
+  font-family: "Axiforma";
+}
+
+.h3 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Axiforma";
+}
+
+.col {
+  width: 20%;
+}
+
+.column {
+  width: 20%;
+}
+
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+:focus::-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
 /* Header */
 .header {
+  width: 100%;
   height: 153px;
   margin-top: 24px;
   margin-bottom: 20px;
@@ -83,8 +121,7 @@ button {
 .form-serach input {
   width: 100%;
   height: 42px;
-  /* background: #f9f0da; */
-  padding-left: 15px;
+  padding-left: 40px;
 }
 
 .form-serach button {
@@ -117,9 +154,16 @@ button {
   border-bottom: 1px solid #c29a0d;
 }
 
-.header-place input::placeholder {
-  padding-left: 25px;
+.header-place input::placeholder:focus {
+  color: transparent;
 }
+
+.header-time {
+  display: inline-block;
+}
+/* .header-clock::before {
+  content: url(../img/Header/wall-clock.png);
+} */
 
 .header-address {
   display: flex;
@@ -162,6 +206,16 @@ button {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  font-family: "Axiforma";
+  /* font-size: 16px; */
+}
+
+.navigation a {
+  color: black;
+}
+
+button:hover {
 }
 
 .li {
@@ -171,6 +225,7 @@ button {
   justify-content: center;
   width: 11.11%;
   height: 100%;
+  transition: all 0.8s ease;
 }
 
 .li:hover {
@@ -186,25 +241,12 @@ button {
 }
 
 .catalog {
-  margin-bottom: 100px;
-}
-
-.catalog-h2 {
-  font-size: 26px;
-  font-weight: 600;
-  font-family: "Axiforma";
-  padding: 90px 0px 50px 0px;
-}
-
-.catalog-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 30px;
+  padding: 40px 0px;
 }
 
 .catalog-items {
   height: 247px;
-  width: 247px;
+  width: 100%;
   box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.137);
   display: flex;
   text-align: center;
@@ -214,14 +256,31 @@ button {
 
   font-family: "Axiforma", "Medium";
   font-weight: 400;
+  transition: all 0.8s ease;
+  cursor: pointer;
 }
 
-.catalog-items img {
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 10px;
+.catalog-items:hover {
+  box-shadow: inset 0 0 0 3px #fde037;
+  transform: scale(1.1);
 }
 
+.catalog-items-img {
+  height: 80px;
+  margin-bottom: 40px;
+}
+
+.catalog-items-img img {
+  max-height: 80px;
+}
+
+.catalog-text {
+  line-height: 1;
+}
+
+.recommend {
+  padding-bottom: 100px;
+}
 .recommend-list {
   font-family: "Axiforma";
   font-weight: 600;
@@ -235,25 +294,31 @@ button {
 }
 
 .recommend-list a:hover {
+  transition: all 0.1s ease;
   border-bottom: 4px solid #fde037;
 }
 
 .recommend-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 30px;
-  font-family: "Open Sans";
+  width: 100%;
 }
 
 .recommend-item {
   height: 520px;
-  width: 247px;
+  width: 100%;
   border: 1px solid #e8e8e8;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: space-around; */
-  padding: 40px 10px;
+  padding: 30px 10px;
+}
+
+.recommend-img {
+  height: 160px;
+}
+
+.recommend-img img {
+  max-height: 160px;
 }
 
 .recommend-item img {
@@ -302,6 +367,13 @@ button {
   border: none;
 }
 
+.item-add-button .input:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 .item-button {
   height: 45px;
   width: 150px;
@@ -310,6 +382,15 @@ button {
   border-radius: 20px;
   border: none;
   text-align: center;
+}
+
+.item-button a {
+  color: #fff;
+}
+
+.item-button:hover {
+  transition: 0.2s;
+  transform: scale(1.1);
 }
 
 /* End Catalog */
@@ -327,11 +408,9 @@ button {
 .footer-info {
   width: 100%;
   display: table;
-  /* display: flex; */
-  /* justify-content: space-around; */
   background-color: #484a57;
   height: 270px;
-  padding-top: 35px;
+  padding: 20px 0px 10px 35px;
 }
 .footer-buy {
   display: table-cell;
@@ -339,6 +418,7 @@ button {
 }
 .footer ul {
   list-style-type: none;
+  margin: 0px 20px;
 }
 .footer a {
   text-decoration: none;
@@ -359,7 +439,26 @@ button {
 .info-adress {
   max-width: 369px;
 }
-.col {
-  width: 20%;
-}
+
 /* End Footer */
+
+.item-add-button input {
+  text-align: center;
+  width: 20px;
+  border: none;
+}
+
+/* @Media */
+
+@media screen and (max-width: 1420px) {
+  .wrapper {
+    width: 1200px;
+  }
+  .container {
+    width: 1000px;
+    padding: 0 15px;
+  }
+  .catalog-text {
+    line-height: 1;
+    font-size: 12px;
+}
