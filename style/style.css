@@ -205,8 +205,8 @@ button {
 .navigation {
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  /* align-items: center;
+  justify-content: space-between; */
   font-family: "Axiforma";
   /* font-size: 16px; */
 }
@@ -215,10 +215,7 @@ button {
   color: black;
 }
 
-button:hover {
-}
-
-.li {
+.navigation .li {
   display: flex;
   text-align: center;
   align-items: center;
@@ -231,6 +228,10 @@ button:hover {
 .li:hover {
   color: white;
   background-color: #fde037;
+}
+
+.navigation-mob {
+  display: none;
 }
 
 /* End Nav */
@@ -451,6 +452,15 @@ button:hover {
   max-width: 369px;
 }
 
+.footer-img {
+  display: inline-block;
+  height: 56px;
+}
+
+.footer-img img {
+  max-height: 56px;
+}
+
 /* End Footer */
 
 .item-add-button input {
@@ -471,6 +481,100 @@ button:hover {
   }
   .catalog-text {
     line-height: 1;
+  }
+  .form-serach form {
+    position: relative;
+    width: 100%;
+  }
+
+  .footer-info {
+    width: 100%;
+    background-color: #484a57;
+    height: 240px;
+    padding-top: 20px;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .h3 {
+    font-size: 18px;
+  }
+  .g-5,
+  .gx-5 {
+    --bs-gutter-x: 1rem;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .catalog-text {
+    line-height: 1;
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .wrapper {
+    max-width: 900px;
+  }
+  .container {
+    max-width: 900px;
+    padding: 0 15px;
+  }
+  .catalog-text {
+    line-height: 1;
+    font-size: 12px;
+  }
+  .form-serach form {
+    position: relative;
+    width: 100%;
+  }
+
+  .nav {
+    align-items: center;
+    background-color: #575b71;
+  }
+
+  .navigation {
+    display: none;
+  }
+  .navigation-mob {
+    display: flex;
+    height: 70px;
+  }
+  .navigation-mob .li {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    transition: all 0.8s ease;
+  }
+  .navigation-mob .li a {
+    color: #fff;
+    font-size: 22px;
+  }
+
+  .navigation-mob .li a:hover {
+    color: #575b71;
+    font-size: 22px;
+  }
+
+  .footer-info {
+    width: 100%;
+    background-color: #484a57;
+    height: 240px;
+    padding-top: 20px;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .h3 {
+    font-size: 18px;
+  }
+  .g-5,
+  .gx-5 {
+    --bs-gutter-x: 1rem;
+  }
+  .column {
+    width: 33%;
   }
 }
