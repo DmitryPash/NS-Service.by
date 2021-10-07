@@ -57,10 +57,12 @@ a {
 
 .col {
   width: 20%;
+  margin: 0;
 }
 
 .column {
   width: 20%;
+  margin: 0;
 }
 
 :focus::-webkit-input-placeholder {
@@ -115,18 +117,18 @@ a {
 button {
   border: none;
   outline: none;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .form-serach input {
   width: 100%;
   height: 42px;
   padding-left: 40px;
+  padding-top: 7px;
 }
 
 .form-serach button {
   height: 26px;
-  width: 26px;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -135,11 +137,7 @@ button {
 }
 
 .form-serach button::before {
-  content: "\f002";
-  font-family: "Font Awesome 5 Free";
-  color: #f9f0da;
-  font-size: 20px;
-  font-weight: bold;
+  content: url(../images/Header/loupe.png);
 }
 
 .header-place a {
@@ -182,6 +180,7 @@ button {
 .header-address-text {
   line-height: 1;
   padding-right: 40px;
+  color: #77777b;
 }
 
 .header-input {
@@ -190,10 +189,12 @@ button {
 
 .header-operator {
   padding-right: 40px;
+  color: #6c6c6f;
 }
 
 .header-clock {
   padding-right: 40px;
+  color: #77777b;
 }
 
 /* End Header */
@@ -252,6 +253,7 @@ button {
   height: 247px;
   width: 100%;
   box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.137);
+  margin-bottom: 30px;
   display: flex;
   text-align: center;
   align-items: center;
@@ -266,12 +268,10 @@ button {
 
 .catalog-items:hover {
   box-shadow: inset 0 0 0 3px #fde037;
-  transform: scale(1.1);
 }
 
 .catalog-items-img {
   height: 80px;
-  margin-bottom: 40px;
 }
 
 .catalog-items-img img {
@@ -317,6 +317,7 @@ button {
   align-items: center;
   /* justify-content: space-around; */
   padding: 30px 10px;
+  margin-bottom: 30px;
 }
 
 .recommend-img {
