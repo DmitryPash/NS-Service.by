@@ -373,6 +373,7 @@ button {
 .item-add-button button {
   background-color: white;
   border: none;
+  font-size: 10px;
 }
 
 .item-add-button .input:active,
@@ -472,9 +473,10 @@ button {
 /* End Footer */
 
 .item-add-button input {
-  text-align: center;
+  height: 100%;
   width: 20px;
   border: none;
+  text-align: center;
 }
 
 /* @Media */
