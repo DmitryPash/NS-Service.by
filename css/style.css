@@ -6,8 +6,8 @@ html,
 body {
   height: 100%;
   background-color: #f4f5fd;
-  /* font-family: "Axiforma"; */
-  font-family: "Monserat", "sans-serif";
+  font-family: "Axiforma";
+  scroll-behavior: smooth;
 }
 
 body {
@@ -71,7 +71,6 @@ a {
 .h2 {
   font-size: 26px;
   font-weight: 600;
-  font-family: "Axiforma";
   padding-top: 100px;
   padding-bottom: 50px;
 }
@@ -79,7 +78,6 @@ a {
 .h3 {
   font-size: 24px;
   font-weight: 600;
-  font-family: "Axiforma";
   line-height: 1;
 }
 
@@ -169,6 +167,9 @@ a {
 }
 
 .header-logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .header-logo img {
@@ -286,15 +287,15 @@ button {
 .header-operator {
   padding-right: 40px;
   color: #6c6c6f;
-  background: url(../images/Header/mts.png) no-repeat;
-  padding-left: 35px;
+  /* background: url(../images/Header/mts.png) no-repeat; */
+  /* padding-left: 35px; */
   padding-top: 5px;
 }
 
 .clock-content {
   font-size: 20px;
-  background: url(../images/Header/wall-clock.png) no-repeat;
-  padding-left: 35px;
+  /* background: url(../images/Header/wall-clock.png) no-repeat;
+  padding-left: 35px; */
 }
 
 .header-operator .img {
@@ -304,6 +305,11 @@ button {
   font-size: 25px;
   display: inline-block;
 }
+
+.header-operator .number-dropdown {
+  display: inline-block;
+}
+
 .header-clock {
   display: flex;
   padding-right: 40px;
@@ -326,24 +332,11 @@ button {
 
 .navigation {
   display: flex;
-  font-family: "Axiforma";
 }
 
 .nav ul {
   display: flex;
-  font-family: "Axiforma";
 }
-
-/* .navigation a {
-  height: 70px;
-  color: black;
-  padding-right: 10px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-} */
 
 .nav li a {
   height: 70px;
@@ -379,11 +372,12 @@ button {
 .catalog {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 
 .catalog-items {
   text-align: center;
-  padding: 65px 0px;
+  padding: 75px 0px 40px 0px;
   margin: 15px 23px;
   box-shadow: 4px 5px 20px rgb(0 0 0 / 14%);
   margin-bottom: 30px;
@@ -402,41 +396,51 @@ button {
 }
 
 .catalog-items-img {
-  height: 80px;
+  height: 70px;
+  margin-bottom: 10px;
 }
 
 .catalog-items-img img {
   max-height: 80px;
 }
 
-.catalog-text {
+.catalog-items-text {
   line-height: 1;
   padding: 0px 10px;
+  height: 50px;
 }
 
 .recommend {
   padding-bottom: 100px;
 }
 .recommend-list {
-  font-family: "Axiforma";
   font-weight: 600;
   font-size: 24px;
   margin-bottom: 80px;
-  padding-right: 380px;
 }
 
-.recommend-list a {
+.recommend-tabs {
+  margin-bottom: 70px;
+}
+
+.recommend-tabs a {
   color: #575b71;
   margin-right: 25px;
 }
 
-.recommend-list a:hover {
+.recommend-tabs a:hover {
   transition: all 0.1s ease;
   border-bottom: 4px solid #fde037;
 }
 
 .recommend-cards {
   width: 100%;
+  display: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.recommend-cards:target {
+  display: block;
 }
 
 .recommend-item {
@@ -459,6 +463,11 @@ button {
   line-height: 1;
   padding: 0px 20px 70px 15px;
   text-align: start;
+  font-size: 14px;
+}
+
+.item-add-text {
+  font-size: 13px;
 }
 
 .item-price {
@@ -616,7 +625,7 @@ button {
     max-width: 1200px;
     padding: 0 15px;
   }
-  .catalog-text {
+  .catalog-items-text {
     line-height: 1;
   }
   .form-serach form {
@@ -646,7 +655,7 @@ button {
 }
 
 @media screen and (max-width: 1180px) {
-  .catalog-text {
+  .catalog-items-text {
     line-height: 1;
     font-size: 12px;
   }
@@ -663,7 +672,7 @@ button {
     max-width: 900px;
     padding: 0 15px;
   }
-  .catalog-text {
+  .catalog-items-text {
     line-height: 1;
     font-size: 12px;
   }
