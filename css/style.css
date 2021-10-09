@@ -526,6 +526,8 @@ button {
   border-radius: 20px;
   border: none;
   text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .item-button a {
