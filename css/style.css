@@ -284,24 +284,40 @@ button {
 .header-operator {
   padding-right: 40px;
   color: #6c6c6f;
-  /* background: url(../images/Header/mts.png) no-repeat; */
-  /* padding-left: 35px; */
   padding-top: 5px;
 }
 
 .clock-content {
+  display: inline-block;
+  position: relative;
   font-size: 20px;
-  /* background: url(../images/Header/wall-clock.png) no-repeat;
-  padding-left: 35px; */
+  padding-left: 50px;
+}
+
+.clock-img {
+  position: absolute;
+  left: 0;
+  /* top: 50%; */
+  /* transform: translate(0, -50%); */
+  /* margin-bottom: -15px; */
 }
 
 .header-operator .img {
   display: inline-block;
 }
 .header-operator .number {
-  font-size: 25px;
   display: inline-block;
-  margin-bottom: 45px;
+  position: relative;
+  font-size: 25px;
+  padding-left: 50px;
+}
+
+.header-operator .number .number-img {
+  position: absolute;
+  left: 0;
+  /* transform: translate(0, -50%); */
+  top: 50%;
+  margin-top: -20px;
 }
 
 .header-operator .number-dropdown {
