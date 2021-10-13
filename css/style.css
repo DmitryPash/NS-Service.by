@@ -260,6 +260,11 @@ button {
   position: relative;
   padding-left: 40px;
 }
+.header-operator .number::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0d7";
+}
 
 .header-operator .number .number-img {
   position: absolute;
