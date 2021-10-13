@@ -327,6 +327,10 @@ button {
   margin-bottom: 45px;
 }
 
+.header-operator .number::after {
+  content: "→";
+}
+
 .header-operator .number-dropdown {
   display: inline-block;
 }
