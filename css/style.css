@@ -352,7 +352,54 @@ button {
 
 .chain1-sort {
   background-color: #f5f5f5;
+  font-size: 21px;
+  padding: 20px;
+  margin-bottom: 40px;
 }
+
+.sort-items {
+  padding-left: 20px;
+}
+.sort-items span {
+  color: #444962;
+}
+.sort-price {
+  color: #444962;
+}
+.sort-price span {
+  padding: 0px 10px;
+  color: black;
+  /* margin: 10pxs; */
+}
+.sort-price span::after {
+  font-size: 14px;
+  color: #444962;
+  content: "▼";
+}
+
+.sort-price a {
+  padding: 5px;
+}
+.sort-price a:hover {
+  border: 1px solid #444962;
+  border-radius: 10px;
+}
+.sort-page {
+  color: #444962;
+}
+.sort-page a {
+  padding: 5px;
+  color: black;
+}
+.sort-page a:hover {
+  border: 1px solid #444962;
+  border-radius: 10px;
+}
+/* .sort-arrow::after {
+  font-size: 14px;
+  color: #444962;
+  content: "▼";
+} */
 
 .catalog-row {
   display: flex;
@@ -400,6 +447,10 @@ button {
   transition: all 0.8s ease;
   cursor: pointer;
   color: black;
+}
+
+.catalog-items-chain1:hover {
+  box-shadow: inset 0 0 0 3px #fde037;
 }
 
 .catalog-chain1-txt .h2 {
@@ -483,13 +534,13 @@ button {
 
 .recommend-cards {
   width: 100%;
-  display: none;
+  /* display: none; */
   font-family: "Open Sans", sans-serif;
 }
 
-.recommend-cards:target {
+/* .recommend-cards:target {
   display: block;
-}
+} */
 
 .recommend-item {
   text-align: center;
