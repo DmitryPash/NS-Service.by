@@ -337,10 +337,22 @@ button {
   padding-bottom: 30px;
   padding-left: 18px;
 }
+.ns2-h2 {
+  padding: 85px 0px 40px 0px;
+  font-size: 26px;
+  font-weight: 600;
+}
 
-.main-content {
+/* .main-content {
   display: flex;
   flex-direction: row;
+} */
+.chainsaw1-row {
+  display: flex;
+  flex-direction: row;
+}
+.chainsaw1-ul {
+  margin-bottom: 80px;
 }
 
 .main-content .catalog {
@@ -378,6 +390,8 @@ button {
 }
 
 .sort-price a {
+  border: 1px solid rgba(255, 255, 255, 0);
+
   padding: 5px;
 }
 .sort-price a:hover {
@@ -390,6 +404,7 @@ button {
 .sort-page a {
   padding: 5px;
   color: black;
+  border: 1px solid rgba(255, 255, 255, 0);
 }
 .sort-page a:hover {
   border: 1px solid #444962;
@@ -405,6 +420,7 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
+  overflow: hidden;
 }
 
 .catalog-items-ns {
@@ -481,6 +497,18 @@ button {
 .catalog-items-img {
   height: 70px;
   margin-bottom: 10px;
+}
+.catalog-items-chain1-img {
+  max-width: 100%;
+  height: auto;
+}
+.chainsaw1-items-img {
+  height: 50px;
+  margin: 20px 10px 20px 20px;
+}
+
+.chainsaw1-items-img img {
+  max-height: 50px;
 }
 .catalog-chain1 .catalog-items-chain1 .catalog-items-img {
   height: 40px;
@@ -625,6 +653,7 @@ button {
   text-align: center;
   font-size: 14px;
   text-transform: uppercase;
+  transition: 0.2s;
 }
 
 .item-button a {
@@ -632,8 +661,8 @@ button {
 }
 
 .item-button:hover {
-  transition: 0.2s;
   transform: scale(1.1);
+  color: #fff;
 }
 
 /* End Catalog */
@@ -724,6 +753,54 @@ button {
   color: #c29a0d;
   border-bottom: 1px solid #c29a0d;
 }
+.main-info li :hover {
+  color: #f5c311;
+}
+/* Chainsaw-parts */
+.chainsaw-parts-txt a {
+  color: #dddddd;
+  padding-right: 10px;
+  border-right: 1px solid #dddddd;
+}
+
+.chainsaw-parts-txt a:nth-of-type(2) {
+  padding-left: 10px;
+}
+.chainsaw-parts-txt a:nth-of-type(3) {
+  border: none;
+  padding-left: 10px;
+}
+
+.chainsaw-parts-img {
+  height: 310px;
+}
+.chainsaw-parts-img img {
+  max-height: 310px;
+}
+.chainsaw-parts-ul a li {
+  color: black;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+.chainsaw-parts-ul a li:hover {
+  color: #f1c731;
+}
+
+.chainsaw-parts-h2 {
+  color: #444962;
+  margin-bottom: 70px;
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.chainsaw-parts-h3 {
+  color: #575b71;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+/* End chaisaw-parts */
 
 /* End Footer */
 
@@ -882,6 +959,25 @@ button {
 }
 
 .chain1-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  display: -ms-flex;
+  display: -ms-inline-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.chainsaw-parts-row {
   display: -webkit-box;
   display: -webkit-flex;
   display: -webkit-inline-box;
@@ -1297,6 +1393,7 @@ button {
     flex: 0 0 20%;
     max-width: 20%;
   }
+
   .col-xl-30 {
     flex: 0 0 30%;
     max-width: 30%;
