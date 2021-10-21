@@ -1,0 +1,91 @@
+h1,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #c29a0d;
+  /* border-bottom: 1px solid #c29a0d; */
+  text-decoration: underline;
+  text-decoration-color: #c29a0d;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 25px;
+}
+
+h2,
+.h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.ui-page-title {
+  margin-bottom: 30px;
+  /* Смотри макет */
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.ui-btn {
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  max-width: 100%;
+  line-height: 40px;
+  background-color: #f1c731;
+  padding: 0px 40px;
+  border-radius: 20px;
+
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.ui-btn:hover {
+  background-color: #e6b506;
+}
+
+.ui-breadcrumbs-link {
+  color: #dddddd;
+  text-decoration: none;
+  padding-right: 10px;
+  margin-right: 7px;
+  border-right: 1px solid #dddddd;
+}
+
+.ui-breadcrumbs-link:last-child {
+  border-right: 0;
+  padding-right: 0;
+  margin-right: 0;
+}
