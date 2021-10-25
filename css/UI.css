@@ -38,6 +38,13 @@ h3,
   line-height: 1;
 }
 
+h4,
+.h4 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1;
+}
+
 ul,
 li {
   list-style: none;
@@ -74,6 +81,93 @@ li {
 
 .ui-btn:hover {
   background-color: #e6b506;
+}
+
+.ui-btn-big {
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  max-width: 100%;
+  line-height: 35px;
+  background-color: #ffffff;
+  padding: 0px 40px;
+  border-radius: 20px;
+
+  text-align: center;
+  color: #f1c731;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: 3px solid #f1c731;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.ui-btn-big:hover {
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  max-width: 100%;
+  line-height: 35px;
+  background-color: #f1c731;
+  padding: 0px 40px;
+  border-radius: 20px;
+
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: 3px solid #f1c731;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.ui-btn-big-black {
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  width: 60%;
+  max-width: 100%;
+  line-height: 35px;
+  background-color: #ffffff;
+  padding: 0px 40px;
+  border-radius: 20px;
+
+  text-align: center;
+  color: #575b71;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: 3px solid #575b71;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.ui-btn-big-black:hover {
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  max-width: 100%;
+  line-height: 35px;
+  background-color: #575b71;
+  padding: 0px 40px;
+  border-radius: 20px;
+
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: 3px solid #575b71;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .ui-breadcrumbs-link {

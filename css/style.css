@@ -303,6 +303,10 @@ button {
   padding: 30px 18px 30px;
 }
 
+.catalog {
+  margin-bottom: 70px;
+}
+
 .ns2-h2 {
   padding: 85px 0px 40px 0px;
   font-size: 26px;
@@ -320,9 +324,13 @@ button {
 .items-ul {
   margin-bottom: 80px;
 }
-.items-ul li {
+
+.bcg-none ul li {
   margin-bottom: 60px;
 }
+/* .items-ul ul li {
+  margin-bottom: 60px;
+} */
 
 .main-content .catalog {
   margin-bottom: 100px;
@@ -447,6 +455,7 @@ button {
   transition: all 0.8s ease;
   cursor: pointer;
   color: black;
+  text-decoration: none;
 }
 
 .catalog-chain1 .catalog-items-chain1 {
@@ -525,6 +534,8 @@ button {
 .catalog-items-text {
   line-height: 1;
   padding: 0px 10px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .catalog-chain1 .catalog-items-text {
@@ -535,11 +546,8 @@ button {
   line-height: normal;
 }
 
-.recommend {
-  padding-bottom: 100px;
-}
 .recommend-list {
-  margin-bottom: 80px;
+  margin-bottom: 65px;
 }
 
 .recommend-tabs {
@@ -549,6 +557,8 @@ button {
 .recommend-tabs a {
   color: #575b71;
   margin-right: 25px;
+  font-size: 24px;
+  text-decoration: none;
 }
 
 .recommend-tabs a:hover {
@@ -716,6 +726,69 @@ button {
 
 /* End Catalog */
 
+/* Contact */
+
+.contact-parts {
+  margin-bottom: 80px;
+}
+
+.contact-parts-div {
+  margin-bottom: 90px;
+}
+
+.contact-map-img {
+  max-width: 900px;
+}
+
+.contact-map-img img {
+  width: 900px;
+}
+
+.contact-parts-div .h4 {
+  text-transform: uppercase;
+  margin-bottom: 45px;
+  color: #575b71;
+}
+
+.contact-txt {
+  margin-bottom: 35px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  line-height: 1;
+  padding: 0px 20px;
+  white-space: normal;
+  width: 62%;
+  margin-bottom: 78px;
+}
+
+.callback {
+  width: 40%;
+}
+
+.contact-input-group input {
+  height: 55px;
+  width: 49%;
+  border-radius: 25px;
+  border-color: #8e909d;
+  padding: 19px;
+  margin-bottom: 15px;
+}
+.contact-message {
+  height: 105px;
+  width: 100%;
+  border-radius: 25px;
+  border-color: #8e909d;
+  padding: 19px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+/* End contact */
+
 /* Footer */
 .footer {
   background-color: #484a57;
@@ -786,6 +859,10 @@ button {
   max-height: 56px;
 }
 
+.main-info a {
+  text-decoration: none;
+}
+
 .main-info h2 {
   color: #3c3f4d;
 }
@@ -841,7 +918,107 @@ button {
   margin-bottom: 50px;
 }
 /* End chaisaw-parts */
+.bord-logo {
+  text-align: center;
+  width: 52%;
+  border: 1px solid gray;
+}
+.perf-bord {
+  display: flex;
+  justify-content: space-between;
+}
+.perf-list-info {
+  text-align: left;
+}
+.perf-list {
+  text-align: center;
+  padding: 50px 50px 25px 50px;
+  box-shadow: rgba(0, 0, 0, 0.14) 4px 5px 20px;
+  width: 525px;
+}
 
+.perf-list-info div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.perf-list-info img {
+  padding-right: 10px;
+}
+.perf-list-price {
+  text-transform: uppercase;
+}
+.perf-info p {
+  padding-top: 35px;
+  padding-bottom: 40px;
+}
+.perf-list-input {
+  margin: 0 auto;
+}
+.perf-list-price {
+  padding-bottom: 30px;
+}
+
+.perf-list-input input {
+  height: 40px;
+  width: 70%;
+  margin-bottom: 10px;
+  border: 2px solid grey;
+  opacity: 0.7;
+  border-radius: 10px;
+}
+.perf-list-contact a {
+  color: #000;
+  text-decoration: none;
+  padding-right: 10px;
+}
+.perf-list-contact a:hover {
+  text-decoration: underline;
+}
+.ui-breadcrumbs h2 {
+  margin-top: 0;
+}
+/* End perfarator-info  */
+/* start card item  */
+.list-item {
+  text-align: left;
+  font-size: 26px;
+  color: #575b71;
+}
+.list-item span {
+  font-size: 20px;
+}
+
+.item-info-txt {
+  color: #575b71;
+}
+
+.item-info-art {
+  color: #7f7f7f;
+}
+.perf-list-buy {
+  padding: 85px 85px 0 85px;
+  box-shadow: rgba(0, 0, 0, 0.14) 4px 5px 20px;
+  width: 45%;
+}
+.list-buy-item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.list-buy-item a {
+  width: 50%;
+  margin: 1px;
+}
+.score img {
+  background-color: yellow;
+}
+
+.fa,
+.fas {
+  color: #f1c731;
+}
 /* End Footer */
 
 .item-add-button input {
