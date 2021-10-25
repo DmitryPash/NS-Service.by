@@ -64,6 +64,7 @@ body {
 
 .header-content {
   display: flex;
+  justify-content: center;
   padding-bottom: 30px;
   padding-top: 25px;
 }
@@ -693,6 +694,8 @@ button {
   background-color: white;
   border: none;
   font-size: 10px;
+  width: 35%;
+  height: 100%;
 }
 
 .item-add-button .input:active,
@@ -859,29 +862,27 @@ button {
   max-height: 56px;
 }
 
-.main-info a {
-  text-decoration: none;
-}
-
 .main-info h2 {
   color: #3c3f4d;
 }
 .main-info a {
   color: #000;
-  border-bottom: 1px solid #000;
 }
 
 .main-info p {
   padding-bottom: 30px;
+}
+.main-info p a {
+  text-decoration-color: #000000;
+  color: #000000;
 }
 .main-info li {
   padding: 10px 0;
 }
 .main-info li a {
   color: #c29a0d;
-  border-bottom: 1px solid #c29a0d;
 }
-.main-info li :hover {
+.main-info li:hover {
   color: #f5c311;
 }
 /* Chainsaw-parts */
@@ -1023,7 +1024,7 @@ button {
 
 .item-add-button input {
   height: 100%;
-  width: 20px;
+  width: 23px;
   border: none;
   text-align: center;
 }
