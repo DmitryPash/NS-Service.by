@@ -123,7 +123,7 @@ button {
 }
 
 .form-serach button::before {
-  content: url(../images/Header/loupe.png);
+  content: url(../images/icons/loupe.png);
 }
 
 .header-place a {
@@ -775,8 +775,8 @@ button {
 .contact-input-group input {
   height: 55px;
   width: 49%;
+  border: 1px solid #8e909d;
   border-radius: 25px;
-  border-color: #8e909d;
   padding: 19px;
   margin-bottom: 15px;
 }
