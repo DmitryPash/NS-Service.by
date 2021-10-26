@@ -8,7 +8,10 @@
 
 
 let inputBtns = document.querySelectorAll(".item-add-button");
-
+let input = document.querySelectorAll(".input")
+input.forEach(element => {
+  element.value = 1;
+})
 plus = input =>{
   return (() =>{
     input.value++;

@@ -11,6 +11,8 @@ body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  color: #545454;
+  line-height: 1.42;
 }
 
 .content {
@@ -208,6 +210,11 @@ button {
   padding-left: 10px;
   left: 0;
 }
+
+.clock-content-email {
+  display: inline;
+  vertical-align: middle;
+}
 .clock-img {
   position: absolute;
   left: 0;
@@ -271,7 +278,7 @@ button {
 
 .nav li a {
   height: 70px;
-  color: black;
+  color: #424141;
   padding: 0px 15px;
   display: flex;
   align-items: center;
@@ -312,12 +319,26 @@ button {
   padding: 85px 0px 40px 0px;
   font-size: 26px;
   font-weight: 600;
+  color: #000;
 }
 
-/* .main-content {
-  display: flex;
-  flex-direction: row;
-} */
+.main-pay h1 {
+  color: #444962;
+}
+
+.main-pay h2 {
+  color: #575b71;
+}
+
+.main-pay a {
+  color: #fde037;
+  text-decoration: underline;
+  text-decoration-color: #fde037;
+}
+.main-pay a:hover {
+  text-decoration: none;
+}
+
 .chainsaw1-row {
   display: flex;
   flex-direction: row;
@@ -327,7 +348,7 @@ button {
 }
 
 .bcg-none ul li {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 /* .items-ul ul li {
   margin-bottom: 60px;
@@ -362,23 +383,30 @@ button {
 .sort-price {
   color: #444962;
 }
+.sort-price-p {
+  display: inline-block;
+  padding-right: 40px;
+}
 .sort-price span {
   padding: 0px 10px;
   color: black;
   /* margin: 10pxs; */
 }
-.sort-price span::after {
-  font-size: 14px;
+
+.sort-arrow {
+  color: #000000;
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding: 5px;
+  margin-right: 15px;
+}
+.sort-arrow::after {
+  font-size: 12px;
   color: #444962;
   content: "▼";
+  padding-left: 8px;
 }
 
-.sort-price a {
-  border: 1px solid rgba(255, 255, 255, 0);
-
-  padding: 5px;
-}
-.sort-price a:hover {
+.sort-arrow:hover {
   border: 1px solid #444962;
   border-radius: 10px;
 }
@@ -459,12 +487,13 @@ button {
   text-decoration: none;
 }
 
-.catalog-chain1 .catalog-items-chain1 {
+.catalog-chain1 .category-card {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 
+  padding: 15px;
   min-height: 120px;
   box-shadow: 4px 5px 20px rgb(0 0 0 / 14%);
   margin-bottom: 36px;
@@ -475,7 +504,7 @@ button {
   color: black;
 }
 
-.catalog-items-chain1:hover {
+.category-card:hover {
   box-shadow: inset 0 0 0 3px #fde037;
 }
 
@@ -518,7 +547,11 @@ button {
 .card-item-img img {
   max-height: 50px;
 }
-.catalog-chain1 .catalog-items-chain1 .catalog-items-img {
+
+.card-tabs {
+  margin-bottom: 40px;
+}
+.catalog-chain1 .category-card .catalog-items-img {
   height: 40px;
   margin-bottom: 10px;
 }
@@ -536,7 +569,7 @@ button {
   line-height: 1;
   padding: 0px 10px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .catalog-chain1 .catalog-items-text {
@@ -603,12 +636,16 @@ button {
   overflow: hidden;
 }
 .item-text a {
-  color: #000;
+  color: #515568;
   text-decoration: none;
+}
+.item-text a:hover {
+  text-decoration: underline;
 }
 
 .item-add-text {
   font-size: 13px;
+  color: #515568;
 }
 
 .item-price {
@@ -617,6 +654,7 @@ button {
   font-size: 35px;
   opacity: 0.8;
   text-align: start;
+  color: #515568;
 }
 
 .item-price span {
@@ -629,6 +667,7 @@ button {
 .item-add {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   margin-bottom: 15px;
 }
@@ -647,6 +686,7 @@ button {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  color: #9fa3a7;
 }
 .btn-minus::after {
   position: absolute;
@@ -657,13 +697,14 @@ button {
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 1px;
-  background-color: #000000;
+  background-color: #9fa3a7;
 }
 
 .btn-plus {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  color: #9fa3a7;
 }
 
 .btn-plus::after {
@@ -675,7 +716,7 @@ button {
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 1px;
-  background-color: #000000;
+  background-color: #9fa3a7;
 }
 
 .btn-plus::before {
@@ -687,7 +728,7 @@ button {
   top: 50%;
   transform: translate(-50%, -50%) rotate(90deg);
   border-radius: 1px;
-  background-color: #000000;
+  background-color: #9fa3a7;
 }
 
 .item-add-button button {
@@ -736,7 +777,13 @@ button {
 }
 
 .contact-parts-div {
-  margin-bottom: 90px;
+  margin-bottom: 50px;
+  /* text-transform: uppercase; */
+  color: #575b71;
+}
+
+.callback .contact-parts-div {
+  text-transform: uppercase;
 }
 
 .contact-map-img {
@@ -757,6 +804,10 @@ button {
   margin-bottom: 35px;
 }
 
+.contact-number {
+  color: #77777b;
+}
+
 .contact-btn {
   display: flex;
   align-items: center;
@@ -767,7 +818,9 @@ button {
   width: 62%;
   margin-bottom: 78px;
 }
-
+#contact-btn:hover {
+  color: #fff;
+}
 .callback {
   width: 40%;
 }
@@ -776,7 +829,7 @@ button {
   height: 55px;
   width: 49%;
   border: 1px solid #8e909d;
-  border-radius: 25px;
+  border-radius: 20px;
   padding: 19px;
   margin-bottom: 15px;
 }
@@ -788,6 +841,11 @@ button {
   padding: 19px;
   resize: none;
   margin-bottom: 10px;
+}
+
+.btn {
+  width: 100%;
+  text-align: right;
 }
 
 /* End contact */
@@ -808,12 +866,10 @@ button {
   margin-bottom: 20px;
 }
 
-.footer-info .row .col-xl-20:last-child {
+.footer-info .col-lg-2 .h3 {
   text-align: end;
 }
-.footer-buy {
-  /* padding-right: 50px; */
-}
+
 .footer ul {
   list-style-type: none;
   /* margin: 0px 20px; */
@@ -828,6 +884,9 @@ button {
 
 .footer-buy a {
   color: white;
+}
+.footer-buy a:hover {
+  text-decoration: underline;
 }
 
 .footer-info-more {
@@ -844,7 +903,6 @@ button {
 
 .footer-address-text a {
   color: #bb9515;
-  border-bottom: 1px solid #bb9515;
 }
 
 .info-adress {
@@ -854,12 +912,25 @@ button {
 }
 
 .footer-img {
-  display: inline-block;
+  /* display: inline-block;
   height: 56px;
+  width: 90px;
+  position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .footer-img img {
   max-height: 56px;
+  padding: 5px;
+  /* max-width: 90px; */
+  /* position: absolute;
+  top: 25%;
+  left: 0; */
+}
+.footer-row {
+  position: relative;
 }
 
 .main-info h2 {
@@ -869,9 +940,9 @@ button {
   color: #000;
 }
 
-.main-info p {
+/* .main-info p {
   padding-bottom: 30px;
-}
+} */
 .main-info p a {
   text-decoration-color: #000000;
   color: #000000;
@@ -908,7 +979,7 @@ button {
   color: #444962;
   margin-bottom: 70px;
   font-size: 26px;
-  font-weight: 600;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -917,6 +988,7 @@ button {
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 50px;
+  font-weight: bold;
 }
 /* End chaisaw-parts */
 .bord-logo {
@@ -924,12 +996,15 @@ button {
   width: 52%;
   border: 1px solid gray;
 }
+
 .perf-bord {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 .perf-list-info {
   text-align: left;
+  color: #7f7f7f;
 }
 .perf-list {
   text-align: center;
@@ -947,29 +1022,49 @@ button {
   padding-right: 10px;
 }
 .perf-list-price {
+  color: #575b71;
+  padding-bottom: 20px;
+  font-size: 22px;
+  text-align: left;
+  font-weight: bold;
   text-transform: uppercase;
 }
+
 .perf-info p {
-  padding-top: 35px;
-  padding-bottom: 40px;
+  /* padding-top: 35px; */
+  /* padding-bottom: 30px; */
+  margin-bottom: 35px;
 }
+.perf-info p:last-child {
+  padding-top: 10px;
+}
+
+.perf-info ul {
+  margin-bottom: 30px;
+}
+
 .perf-list-input {
   margin: 0 auto;
 }
-.perf-list-price {
-  padding-bottom: 30px;
+
+.perf-list-input input::placeholder {
+  text-align: center;
+  letter-spacing: 3px;
+  color: #bebebe;
 }
 
 .perf-list-input input {
   height: 40px;
   width: 70%;
   margin-bottom: 10px;
-  border: 2px solid grey;
+  border: 2px solid #ededed;
   opacity: 0.7;
   border-radius: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .perf-list-contact a {
-  color: #000;
+  color: #7f7f7f;
   text-decoration: none;
   padding-right: 10px;
 }
@@ -1015,11 +1110,25 @@ button {
 .score img {
   background-color: yellow;
 }
-
-.fa,
-.fas {
-  color: #f1c731;
+/* STARTS */
+.rating-mini {
+  display: inline-block;
+  font-size: 0;
 }
+.rating-mini span {
+  padding: 0;
+  font-size: 30px;
+  line-height: 1;
+  color: lightgrey;
+}
+.rating-mini > span:before {
+  content: "★";
+}
+.rating-mini > span.active {
+  color: gold;
+}
+
+/* END STARS */
 /* End Footer */
 
 .item-add-button input {
@@ -1027,6 +1136,7 @@ button {
   width: 23px;
   border: none;
   text-align: center;
+  padding: 0;
 }
 
 /* @Media */
