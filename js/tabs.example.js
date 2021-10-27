@@ -29,6 +29,6 @@ jQuery(document).ready(function($){
 
 	//навешивать табы так
 	//.parent-selector заменить селектор блока, в котором находятся ссылки с якорями
-	$('.recommend-tabs-item a').Tabs();
+	$('.recommend-tabs a').Tabs();
 
 });
