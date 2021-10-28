@@ -76,6 +76,26 @@ inputBtns.forEach((element) => {
                   }
                 });
               });
+              $(".menuToggle-search").click(function() {
+                $(this).toggleClass("active");
+                $('.search-mob').slideToggle(300, function(){
+                  if($(this).css('display') === "none"){
+                    $(this).removeAttr('style');
+                  }
+                });
+              });
             });
+            
+
+            // $(document).ready(function() {
+            //   $(".menuToggle-search").click(function() {
+            //     $(this).toggleClass("active");
+            //     $('.search-mob').slideToggle(300, function(){
+            //       if($(this).css('display') === "none"){
+            //         $(this).removeAttr('style');
+            //       }
+            //     });
+            //   });
+            // });
             
 
