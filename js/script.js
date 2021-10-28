@@ -1,6 +1,6 @@
 
 // let reg = /[A-Za-za-Яа-яËë]/g;
-
+// ------ /\d/g
 // const changeHandler = (e) => {
 //   const value = e.value;
 //   e.value = value.replace(reg, "");
@@ -65,7 +65,7 @@ inputBtns.forEach((element) => {
              });
 
 
-// ---------------------------------------------
+
 
              $(document).ready(function() {
               $(".menuToggle").click(function() {
