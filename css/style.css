@@ -617,7 +617,7 @@ button {
   border-bottom: 4px solid #fde037;
 }
 
-.recommend-tabs-item {
+.recommend-tabs-item.selected {
   border-bottom: 4px solid #fde037;
 }
 
@@ -2050,6 +2050,9 @@ button {
   .catalog-chain1 .catalog-items-text {
     font-size: 12px;
   }
+  .card-item-img {
+    padding-right: 0px;
+  }
 }
 
 @media (max-width: 580px) {
@@ -2058,4 +2061,15 @@ button {
     font-size: 14px;
   }
   /* End Chainsaw-part */
+}
+
+@media (max-width: 398px) {
+  /* Chainsaw-part */
+  .items-ul ul li a {
+    font-size: 14px;
+  }
+  /* End Chainsaw-part */
+  .catalog-items-text {
+    display: block;
+  }
 }

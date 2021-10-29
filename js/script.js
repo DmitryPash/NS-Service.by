@@ -9,6 +9,12 @@
 
 let inputBtns = document.querySelectorAll(".item-add-button");
 let input = document.querySelectorAll(".input")
+let reg = /[^\d]/g;
+input.forEach(element =>{
+  element.oninput = function () {
+    this.value = this.value.replace(reg, "")
+  }
+})
 input.forEach(element => {
   element.value = 1;
 })
