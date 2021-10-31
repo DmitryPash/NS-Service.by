@@ -1,10 +1,28 @@
+$.fn.Tabs = function() {
+  var selector = this;
 
-// let reg = /[A-Za-za-Яа-яËë]/g;
-// ------ /\d/g
-// const changeHandler = (e) => {
-//   const value = e.value;
-//   e.value = value.replace(reg, "");
-// };
+  this.each(function() {
+      var obj = $(this); 
+      $(obj.attr('href')).hide();
+      $(obj).click(function() {
+        $(selector).removeClass('selected');
+        
+        $(selector).each(function(i, element) {
+            $($(element).attr('href')).hide();
+        });
+        
+        $(this).addClass('selected');
+        $($(this).attr('href')).fadeIn();
+        return false;
+      });
+  });
+
+  $(this).show();
+  $(this).first().click();
+  if(location.hash!='' && $('a[href="' + location.hash + '"]').length)
+    $('a[href="' + location.hash + '"]').click();	
+};
+
 
 
 let inputBtns = document.querySelectorAll(".item-add-button");
@@ -38,59 +56,29 @@ inputBtns.forEach((element) => {
 });
 
               
-              $.fn.Tabs = function() {
-                var selector = this;
 
-                this.each(function() {
-                   var obj = $(this); 
-                   $(obj.attr('href')).hide();
-                   $(obj).click(function() {
-                      $(selector).removeClass('selected');
-                      
-                      $(selector).each(function(i, element) {
-                         $($(element).attr('href')).hide();
-                      });
-                      
-                      $(this).addClass('selected');
-                      $($(this).attr('href')).fadeIn();
-                      return false;
-                   });
-                });
+$(document).ready(function() {
 
-                $(this).show();
-                $(this).first().click();
-                if(location.hash!='' && $('a[href="' + location.hash + '"]').length)
-                   $('a[href="' + location.hash + '"]').click();	
-             };
+  $('.recommend-tabs a').Tabs();
+  
+  $(".menuToggle").click(function() {
+    $(this).toggleClass("active");
+    $('.menu').slideToggle(200, function(){
+      if($(this).css('display') === "none"){
+        $(this).removeAttr('style');
+      }
+    });
+  });
 
-
-             jQuery(document).ready(function($){
-
-                $('.recommend-tabs a').Tabs();
-
-             });
-
-
-
-
-             $(document).ready(function() {
-              $(".menuToggle").click(function() {
-                $(this).toggleClass("active");
-                $('.menu').slideToggle(200, function(){
-                  if($(this).css('display') === "none"){
-                    $(this).removeAttr('style');
-                  }
-                });
-              });
-              $(".menuToggle-search").click(function() {
-                $(this).toggleClass("active");
-                $('.search-mob').slideToggle(200, function(){
-                  if($(this).css('display') === "none"){
-                    $(this).removeAttr('style');
-                  }
-                });
-              });
-            });
+  $(".menuToggle-search").click(function() {
+    $(this).toggleClass("active");
+    $('.search-mob').slideToggle(200, function(){
+      if($(this).css('display') === "none"){
+        $(this).removeAttr('style');
+      }
+    });
+  });
+});
             
 
       
