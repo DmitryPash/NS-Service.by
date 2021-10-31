@@ -285,7 +285,7 @@ button {
 .nav li a {
   height: 70px;
   color: #424141;
-  padding: 0px 15px;
+  padding: 0px 14px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -1021,12 +1021,21 @@ button {
 .bord-logo {
   text-align: center;
   border: 1px solid gray;
+  padding-right: 18px;
+  padding-left: 0px;
+  max-height: 370px;
+}
+.bord-logo img {
+  margin: 30px 0px 30px 0px;
+  height: 100%;
 }
 
 .perf-bord {
   display: flex;
   justify-content: space-between;
   margin-bottom: 80px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .perf-list-info {
   text-align: left;
@@ -1034,7 +1043,7 @@ button {
 }
 .perf-list {
   text-align: center;
-  padding: 50px 50px 25px 50px;
+  padding: 50px 50px 50px 50px;
   box-shadow: rgba(0, 0, 0, 0.14) 4px 5px 20px;
 }
 
@@ -1066,6 +1075,17 @@ button {
 
 .perf-info ul {
   margin-bottom: 30px;
+}
+
+.perf-head {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.perf-head .h2 {
+  text-transform: uppercase;
+  color: #444962;
+  padding-bottom: 45px;
 }
 
 .perf-list-input {
@@ -1118,7 +1138,7 @@ button {
   color: #7f7f7f;
 }
 .perf-list-buy {
-  padding: 85px 85px 85px 85px;
+  padding: 85px 85px 130px 85px;
   box-shadow: rgba(0, 0, 0, 0.14) 4px 5px 20px;
 }
 .list-buy-item {
@@ -1183,30 +1203,30 @@ button {
 }
 
 .hamburger {
-  width: 40px;
-  height: 4px;
+  width: 30px;
+  height: 3px;
   transform: translate(-50%, -50%);
   background: #fde037;
   transition: 0.5s;
   display: inline-block;
-  margin-left: 12px;
+  margin-left: 18px;
 }
 
 .hamburger:after,
 .hamburger:before {
   content: "";
-  width: 40px;
-  height: 4px;
+  width: 30px;
+  height: 3px;
   position: absolute;
   background: #fde037;
   transition: 0.5s;
 }
 
 .hamburger:before {
-  top: -16px;
+  top: -10px;
 }
 .hamburger:after {
-  top: 16px;
+  top: 10px;
 }
 .icon.active .hamburger {
   background: rgba(107, 106, 106, 0.315);
@@ -1329,6 +1349,7 @@ button {
   .header-clock {
     padding-right: 20px;
     font-size: 19px;
+    margin-bottom: 20px;
   }
   .header-address-text img {
     display: none;
@@ -1755,6 +1776,16 @@ button {
   }
 }
 
+@media (max-width: 992px) {
+  .left-part {
+    order: 2;
+  }
+
+  .right-part {
+    order: 1;
+  }
+}
+
 @media (min-width: 1170px) {
   .col-lg-1 {
     -ms-flex: 0 0 8.33333%;
@@ -1935,11 +1966,6 @@ button {
 
 /* BURGER */
 @media (max-width: 1020px) {
-  .wrapper {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-
   .nav .wrapper {
     max-width: 100%;
     padding-right: 0px;
@@ -2023,19 +2049,12 @@ button {
     font-size: 18px;
   }
 
-  .footer-info {
-    line-height: 1;
-  }
-
   .row-footer {
     justify-content: space-between;
   }
 }
 
 @media (max-width: 767px) {
-  .catalog-items-text {
-    display: none;
-  }
   .catalog-items-text .chain-catalog {
     display: flex;
   }
@@ -2061,6 +2080,10 @@ button {
     font-size: 14px;
   }
   /* End Chainsaw-part */
+  .footer-buy ul li:first-child {
+    padding-bottom: 5px;
+    padding-top: 25px;
+  }
 }
 
 @media (max-width: 398px) {
@@ -2071,5 +2094,31 @@ button {
   /* End Chainsaw-part */
   .catalog-items-text {
     display: block;
+  }
+  .mob-img {
+    max-width: 130px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .menuToggle-search {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 328px) {
+  .mob-img {
+    max-width: 130px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .menuToggle-search {
+    margin-left: 20px;
+  }
+
+  .row-mob a:nth-of-type(3) {
+    display: none;
+  }
+  .row-mob a:nth-of-type(2) {
+    display: none;
   }
 }
