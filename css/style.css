@@ -840,7 +840,7 @@ button {
   width: 62%;
   margin-bottom: 78px;
 }
-#contact-btn:hover {
+#contact-btn-id:hover {
   color: #fff;
 }
 .callback {
@@ -2115,9 +2115,6 @@ button {
     margin-left: 20px;
   }
 
-  .row-mob a:nth-of-type(3) {
-    display: none;
-  }
   .row-mob a:nth-of-type(2) {
     display: none;
   }
