@@ -23,13 +23,13 @@
 <body>
     <div class="content">
        <!-- Header -->
-      <header class="header">
+       <header class="header">
          <div class="wrapper">
             <div class="header-content">
                <div class="row">
                   <div class="col-lg-3 col-md-3 col-sm-4">
                      <div class="header-logo">
-                        <a href="./index.html"><img src="./images/logo.png" alt="alt"></a>
+                        <a href='./index.html'><img src="./images/logo.png" alt="alt"></a>
                      </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-4">
@@ -39,20 +39,20 @@
                               <div class="img"><img src="./images/location.png" alt="alt"></div>
                               <div class="text">
                                  <div class="">г.Минск, ул.Чюрлениса, 4 (ст. м. Малиновка)</div>
-                                 <a href="./contact.html" class="a">Схема проезда</a>
+                                 <a href='./contact.html' class="a">Схема проезда</a>
                               </div>
 
                            </div>
                            <div class="header-address-text">
                               <div class="text">
                                  <div class="">г.Минск, ул.Чюрлениса, 4 (ст. м. Малиновка)</div>
-                                 <a href="./contact.html" class="a">Схема проезда</a>
+                                 <a href='./contact.html' class="a">Схема проезда</a>
                               </div>
 
                            </div>
                         </div>
                         <div class="form-serach">
-                           <form>
+                           <form action="">
                               <input type="text" placeholder="Поиск...">
                               <button type="submit"></button>
                            </form>
@@ -72,7 +72,7 @@
                                  </div>
                                  <div class="header-time">Пн-Пт: с 9.00 до 19.00</div>
                                  <div>Сб: с 9.00 до 13.00 -Вс: выходной</div>
-                                 <a href="javascript:void(0)">nsservis@list.ru</a>
+                                 <a href='javascript:void(0)'>nsservis@list.ru</a>
                               </div>
                            </div>
                         </div>
@@ -92,40 +92,29 @@
                            <img src="./images/mob/loupe.png" alt="alt">
                         </div>
                   </div>
-                  <a href="javascript:void(0)" class="active">
-                     <div class="mob-img">
-                        <img src="./images/logo.png" alt="alt">
-                     </div>
+                  <a href="/" class="header-mob-logo">
+                     <img src="./images/logo.png" alt="alt">
                   </a>
-                  <a href="./contact.html" class="active">
-                     <div class="mob-img">
-                        <img src="./images/mob/place.png" alt="alt">
-                     </div>
+                  <a href="#" class="header-mob-toggler header-mob-pin">
+                     <img src="./images/mob/place.png" alt="alt">
                   </a>
-                  <a href="tel:+375296703344" class="active">
-                     <div class="mob-img">
-                        <img src="./images/mob/telephone.png" alt="alt">
-                     </div>
+                  <a href="tel:+375296703344" class="header-mob-toggler header-mob-phone">
+                     <img src="./images/mob/telephone.png" alt="alt">
                   </a>
                </div>
-                     <ul class="menu">
-                        <li><a href="./index.html">Главная</a></li>
-                        <li><a href="./main-ns2.html">Каталог</a></li>
-                        <li><a href="./main-ns3.html">Ремонт инструментов</a></li>
-                        <li><a href="./pay-info.html">Оплата</a></li>
-                        <li><a href="#">Доставка</a></li>
-                        <li><a href="#">Гарантия</a></li>
-                        <li><a href="./contact.html">Реквизиты</a></li>
-                        <li><a href="./contact.html">Контакты</a></li>
-                        <li><a href="#">Оптовым покупателям</a></li>
-                     </ul>
-                     <div class="form-serach search-mob">
-                        <form>
-                           <input type="text" placeholder="Поиск...">
-                           <button type="submit"></button>
-                        </form>
-                     </div>
-             
+
+               <ul class="menu">
+                  <li><a href='./index.html'>Главная</a></li>
+                  <li><a href='./main-ns2.html'>Каталог</a></li>
+                  <li><a href='./main-ns3.html'>Ремонт инструментов</a></li>
+                  <li><a href='./pay-info.html'>Оплата</a></li>
+                  <li><a href='#'>Доставка</a></li>
+                  <li><a href='#'>Гарантия</a></li>
+                  <li><a href='./contact.html'>Реквизиты</a></li>
+                  <li><a href='./contact.html'>Контакты</a></li>
+                  <li><a href='#'>Оптовым покупателям</a></li>
+               </ul>
+               
             </div>
          </nav>
       </header>
@@ -134,10 +123,12 @@
         <div class="middle" id="middle">
             <div class="wrapper">
                 <main class="main">
-                    <div class="h2 ui-page-title">Каталог товаров</div>
+
+
                     <div class="main-content">
                         <div class="row">
                             <div class="col-xl-20 col-lg-3 col-md-4  left-part">
+                              <div class="h2 ui-page-title">Каталог товаров</div>
                                 <div class="items-ul">
                                    <ul>
                                       <li>
@@ -301,51 +292,56 @@
                              </div>
                              <div class="col-xl-80 col-lg-9 col-md-8 col-sm-12 right-part">
                                 <div class="perf-info">
-                                 <div class="perf-head">
+
+                                
                                     <div class="ui-breadcrumbs">
                                         <a href="#" class="ui-breadcrumbs-link">Главная</a>
                                         <a href="#" class="ui-breadcrumbs-link">Запчасти для бензопил</a>
                                         <a href="#" class="ui-breadcrumbs-link">Stihl</a>
                                     </div>                              
                                     <div class="h2">Глушитель для бензопилы Stihl MS-361</div>
-                                 </div>
+                                
                                     <div class="perf-bord">
-                                       <div class="col-xl-60 ">
-                                        <div class="bord-logo"><img
-                                                src="./images/examples/9110eeeeafc423f7faaa421d6cb2306b.jpg" alt="alt">
-                                        </div>
-                                       </div>
-                                       <div class="col-xl-40 col-lg-8 col-sm-10 col-xs-12 col-us-12">
-                                        <div class="perf-list-buy">
-                                            <div class="list-buy-item">
-                                                <div class="list-item">42 <span>руб. за шт</span></div>
-                                                <div class="score">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
+                                       <div class="row">
+                                          <div class="col-xl-60 col-lg-6">
+                                          <div class="bord-logo"><img
+                                                   src="./images/examples/9110eeeeafc423f7faaa421d6cb2306b.jpg" alt="alt">
+                                          </div>
+                                          </div>
+                                          <div class="col-xl-40 col-lg-6">
+                                          <div class="perf-list-buy">
+                                             <div class="perf-list-inner">
+                                                <div class="list-buy-item">
+                                                   <div class="list-item">42 <span>руб. за шт</span></div>
+                                                   <div class="score">
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                   </div>
                                                 </div>
-                                            </div>
-                                            <div class="list-buy-item">
-                                                <div class="buy-item-info">
-                                                    <div class="item-info-txt">
-                                                        <img src="./images/acceot.jpg" alt="alt">
-                                                        В наличии 1
-                                                    </div>
-                                                    <div class="item-info-art">Артикул 7236234678</div>
+                                                <div class="list-buy-item">
+                                                      <div class="buy-item-info">
+                                                         <div class="item-info-txt">
+                                                            <img src="./images/acceot.jpg" alt="alt">
+                                                            В наличии 1
+                                                         </div>
+                                                         <div class="item-info-art">Артикул 7236234678</div>
+                                                      </div>
+                                                      <div class="item-add-button">
+                                                         <button class="btn-minus"></button>
+                                                         <input type="text" id="input" class='input' value="1">
+                                                         <button class="btn-plus"></button>
+                                                      </div>
                                                 </div>
-                                                <div class="item-add-button">
-                                                    <button class="btn-minus"></button>
-                                                    <input type="text" class="input" value="1">
-                                                    <button class="btn-plus"></button>
+                                                <div class="list-buy-item">
+                                                      <a class="ui-btn-big">Корзина</a>
+                                                      <a class="ui-btn-big-black">Купить в 1 клик</a>
                                                 </div>
-                                            </div>
-                                            <div class="list-buy-item">
-                                                <a class="ui-btn-big">Корзина</a>
-                                                <a class="ui-btn-big-black">Купить в 1 клик</a>
-                                            </div>
-                                        </div>
+                                             </div>
+                                          </div>
+                                          </div>
                                        </div>
                                     </div>
                                 </div>
@@ -479,86 +475,80 @@
         </div>
         <!-- End Main -->
         <!-- Footer -->
-        <footer class="footer" id="footer">
+        <footer class='footer' id="footer">
          <div class="footer-info">
              <div class="wrapper">
                 
                     <div class="row-footer">
-                        <div class="col-xl-20 col-lg-2 col-sm-3 col-xs-4 col-us-12">
-                           <div class="footer-buy">
+                        <div class="col-xl-20 col-lg-2 col-sm-4 col-us-6">
+                           <div class="footer-menu">
+                              <div class="footer-menu-title">Как купить</div>
                               <ul>
-                                    <li>
-                                       <div class="h3">Как купить</div>
-                                    </li>
-                                    <li><a href="#">Способ оплаты</a></li>
-                                    <li><a href="#">Способы доставки</a></li>
-                                    <li><a href="#">Гарантия</a></li>
-                                    <li><a href="#">Оптовым покупателям</a></li>
+                                 <li><a href='#'>Способ оплаты</a></li>
+                                 <li><a href='#'>Способы доставки</a></li>
+                                 <li><a href='#'>Гарантия</a></li>
+                                 <li><a href='#'>Оптовым покупателям</a></li>
                               </ul>
                            </div>
                         </div>
-                        <div class="col-xl-20 col-lg-2 col-sm-3 col-xs-4 col-us-12">
-                           <div class="footer-buy">
+                        <div class="col-xl-20 col-lg-2 col-sm-4 col-us-6">
+                           <div class="footer-menu">
+                              <div class="footer-menu-title">Ремонт бензоинструмента</div>
+                              <ul>
+                                    <li><a href='#'>Ремонт бензопил</a></li>
+                                    <li><a href='#'>Ремонт триммеров</a></li>
+                                    <li><a href='#'>Ремонт бензорезов</a></li>
+                                    <li><a href='#'>Ремонт двигателей</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-xl-20 col-lg-3 col-sm-4 col-us-6">
+                           <div class="footer-menu">
+                              <div class="footer-menu-title">Ремонт электроинструмента</div>
 
                               <ul>
-                                    <li>
-                                       <div class="h3">Ремонт бензоинструмента</div>
-                                    </li>
-                                    <li><a href="#">Ремонт бензопил</a></li>
-                                    <li><a href="#">Ремонт триммеров</a></li>
-                                    <li><a href="#">Ремонт бензорезов</a></li>
-                                    <li><a href="#">Ремонт двигателей</a></li>
+                                    <li><a href='#'>Ремонт шуруповертов</a></li>
+                                    <li><a href='#'>Ремонт перфараторов</a></li>
+                                    <li><a href='#'>Ремонт дрелей</a></li>
+                                    <li><a href='#'>Ремонт отбойных молотков</a></li>
+                                    <li><a href='#'>Ремонт цепных электропил</a></li>
+                                    <li><a href='#'>Ремонт дисковых пил</a></li>
                               </ul>
                            </div>
                         </div>
-                        <div class="col-xl-20 col-lg-3 col-sm-3 col-xs-4 col-us-12">
-                           <div class="footer-buy">
+                        <div class="col-xl-20 col-lg-3 col-sm-4 col-us-6">
+                           <div class="footer-menu">
+                              <div class="footer-menu-title">Контакты</div>
                               <ul>
-                                    <li>
-                                       <div class="h3">Ремонт электроинструмента</div>
-                                    </li>
-                                    <li><a href="#">Ремонт шуруповертов</a></li>
-                                    <li><a href="#">Ремонт перфараторов</a></li>
-                                    <li><a href="#">Ремонт дрелей</a></li>
-                                    <li><a href="#">Ремонт отбойных молотков</a></li>
-                                    <li><a href="#">Ремонт цепных электропил</a></li>
-                                    <li><a href="#">Ремонт дисковых пил</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                        <div class="col-xl-20 col-lg-3 col-sm-3 col-xs-4 col-us-12">
-                           <div class="footer-buy">
-
-                              <ul>
-                                    <li>
-                                       <div class="h3">Контакты</div>
-                                    </li>
-                                    <li><a href="#">+375(33)670-33-44</a></li>
-                                    <li><a href="#">+375(33)670-33-44</a></li>
-                                    <li><a href="#">+375(33)670-33-44</a></li>
+                                    <li><a href='#'>+375(33)670-33-44</a></li>
+                                    <li><a href='#'>+375(33)670-33-44</a></li>
+                                    <li><a href='#'>+375(33)670-33-44</a></li>
                                     <li>
                                        <div class="footer-address-text">
                                           <div>г. Минск, ул.Чюрлениса,4</div>
-                                          <a href="#">Схема проезда</a>
-                                       </div>
+                                          <a href='#'>Схема проезда</a>
                                     </li>
                                     <li>
                                        <div class="footer-address-text">
                                           <div>г.Минск, ул.Чюрлениса,4</div>
-                                          <a href="#">Схема проезда</a>
-                                          </div>
+                                          <a href='#'>Схема проезда</a>
                                     </li>
-                                    <li><a href="#">nsservis@list.ru</a></li>
+                                    <li><a href='#'>nsservis@list.ru</a></li>
                               </ul>
                            </div>
                         </div>
-                        <div class="col-xl-20 col-lg-2 col-sm-4 col-xs-4 col-us-12">
-                           <div class="footer-buy">
-                                    <div class="h3 pay-css">Способ оплаты</div>
-                                 <div class="footer-img">
-                                    <img src="./images/visa.png" alt="alt">
-                                    <img src="./images/MasterCard.png" alt="alt">
-                                 </div>     
+                        <div class="col-xl-20 col-lg-2 col-sm-4 col-us-12">
+                           <div class="footer-payments">
+                             
+                              <div class="footer-menu-title ui-righted">Способ оплаты</div>
+                              
+                              
+                              <div class="footer-img">
+                                 <img src="./images/visa.png" alt="alt">
+                                 <img src="./images/MasterCard.png" alt="alt">
+                              </div>
+                                 
+                              
                         </div>
                         </div>
                      </div>
@@ -566,18 +556,19 @@
              </div>
 
          </div>
-         <div class=" footer-info-more">
-             <div class="footer-info-more">
-                 <div class="wrapper">
-                     <div class="info-adress">
-                         © Общество с ограниченной ответственностью "НССервис" г. Минск
-                     </div>
-                     <div class="info-adress">
-                         Регистрационный номер - № ЕГР 691623900 Дата регистрацити 29.03.2018
-                     </div>
-                 </div>
 
-             </div>
+
+         <div class="footer-bottom">
+             
+            <div class="wrapper">
+               <div class="info-adress">
+               © Общество с ограниченной ответственностью "НССервис" г. Минск
+               </div>
+               <div class="info-adress">
+               Регистрационный номер - № ЕГР 691623900 Дата регистрацити 29.03.2018
+               </div>
+            </div>
+
          </div>
      </footer>
      <!-- End Footer -->
