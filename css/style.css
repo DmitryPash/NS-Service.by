@@ -840,9 +840,10 @@ button {
   width: 62%;
   margin-bottom: 78px;
 }
-#contact-btn:hover {
+.ui-btn.contact-btn:hover {
   color: #fff;
 }
+
 .callback {
   /* width: 40%; */
 }
