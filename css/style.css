@@ -325,7 +325,9 @@ button {
   font-weight: 600;
   color: #000;
 }
-
+.main-pay {
+  margin-top: 60px;
+}
 .main-pay h1 {
   color: #444962;
 }
@@ -362,6 +364,7 @@ button {
   margin-bottom: 100px;
 }
 .catalog-chain1 {
+  margin-top: 60px;
   margin-bottom: 100px;
 }
 
@@ -575,10 +578,6 @@ button {
   font-weight: 500;
 }
 
-.catalog-chain1 .catalog-items-text {
-  font-size: 24px;
-}
-
 .catalog-row .catalog-items-text {
   line-height: normal;
 }
@@ -592,6 +591,10 @@ button {
 
 .catalog-row .category-catalog {
   line-height: normal;
+}
+
+.recommend {
+  margin-top: 60px;
 }
 
 .recommend-list {
@@ -1065,6 +1068,9 @@ button {
   text-transform: uppercase;
 }
 
+.perf-info {
+  margin-top: 60px;
+}
 .perf-info p {
   /* padding-top: 35px; */
   /* padding-bottom: 30px; */
@@ -2094,6 +2100,16 @@ button {
   }
   .footer-menu-title.ui-righted {
     text-align: left;
+  }
+  .main-pay,
+  .catalog-chain1,
+  .perf-info,
+  .recommend {
+    margin-top: 0px;
+  }
+
+  .ns2-h2 {
+    padding-top: 0px;
   }
 }
 
