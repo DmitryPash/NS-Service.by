@@ -2018,6 +2018,12 @@ button {
   }
 
   .header-content {
+    /* display: none; */
+    padding: 0;
+  }
+  .header-logo,
+  .header-contact,
+  .header-address-search {
     display: none;
   }
   .menu {
@@ -2055,6 +2061,22 @@ button {
 
   .catalog-chain1 {
     margin-bottom: 30px;
+  }
+
+  header.header {
+    position: relative;
+  }
+  .form-serach {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .form-serach.visible {
+    visibility: visible;
+    opacity: 1;
   }
 }
 /* End Burger */

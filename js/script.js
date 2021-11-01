@@ -72,11 +72,7 @@ $(document).ready(function() {
 
   $(".menuToggle-search").click(function() {
     $(this).toggleClass("active");
-    $('.search-mob').slideToggle(200, function(){
-      if($(this).css('display') === "none"){
-        $(this).removeAttr('style');
-      }
-    });
+    $('.form-serach').toggleClass('visible');
   });
 });
             
