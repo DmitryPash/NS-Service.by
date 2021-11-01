@@ -163,6 +163,10 @@ li {
 .ui-breadcrumbs {
   padding-bottom: 5px;
 }
+
+.ui-breadcrumbs a:hover {
+  text-decoration: underline;
+}
 .ui-breadcrumbs-link {
   color: #dddddd;
   text-decoration: none;
