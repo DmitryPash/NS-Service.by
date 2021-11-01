@@ -29,6 +29,7 @@ h2,
 .h2 {
   font-size: 26px;
   font-weight: bold;
+  margin-bottom: 1.5rem;
 }
 
 h3,
@@ -36,6 +37,7 @@ h3,
   font-size: 24px;
   font-weight: bold;
   line-height: 1;
+  margin-bottom: 1.5rem;
 }
 
 h4,
@@ -173,4 +175,8 @@ li {
   border-right: 0;
   padding-right: 0;
   margin-right: 0;
+}
+
+.ui-righted {
+  text-align: right;
 }
