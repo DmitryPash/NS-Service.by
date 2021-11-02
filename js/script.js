@@ -1,3 +1,31 @@
+const FARBA = {
+	//lazy load для сторонних либ
+	lazyLibraryLoad(scriptSrc,linkHref,callback) {
+    let script
+    const domScript = document.querySelector(`script[src="${scriptSrc}"]`)
+
+    if (!domScript) {
+      script = document.createElement('script');
+      script.src = scriptSrc;
+      document.querySelector('body').after(script);
+    }
+		
+	
+		if (linkHref !== '') {
+			let style = document.createElement('link');
+			style.href = linkHref;
+			style.rel = 'stylesheet';
+			document.querySelector('link').before(style);
+		}
+    
+    if (!domScript) {
+      script.onload = callback
+    } else {
+      domScript.onload = callback
+    }
+	}
+}
+
 $.fn.Tabs = function() {
   var selector = this;
 
@@ -78,6 +106,21 @@ $(document).ready(function() {
             
 
       
-            
+if (document.querySelector('.ui-phone-mask')) {
+  FARBA.lazyLibraryLoad(
+    'https://cdnjs.cloudflare.com/ajax/libs/imask/6.2.2/imask.min.js',
+    '',
+    () => {
+      const masks = document.querySelectorAll('.ui-phone-mask')
+      const maskOptions = {
+        mask: '+{375} (00) 000-00-00',
+        lazy: false,
+      }
+      masks.forEach(el => {
+        IMask(el, maskOptions)
+      })
+    }
+  )
+}
 
         

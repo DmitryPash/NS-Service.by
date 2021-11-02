@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head lang="ru">
+<head>
    <title>Ns Service</title>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -374,19 +374,23 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="col-xl-40 col-lg-6 col-sm-9 col-xs-12 col-us-12">
-                                    <div class="callback">
-                                       <div class="contact-parts-div h4">Форма обратной связи</div>
-                                       <form>
-                                          <div class="contact-input-group">
-                                                <input type="text" placeholder="Имя*">
-                                                <input type="text" placeholder="E-mail*">
+                                    <div class="row">
+                                       <div class="col-xl-40 col-lg-6 col-sm-9 col-xs-12 col-us-12">
+                                          <div class="callback">
+                                             <div class="contact-parts-div h4">Форма обратной связи</div>
+                                             <form>
+                                                <div class="contact-input-group">
+                                                   <input type="text" placeholder="Имя*" name="name" required>
+                                                   <input type="email" placeholder="E-mail*" name="email" required>
+                                                </div>
+                                                   <textarea class="contact-message" placeholder="Сообщение" name="msg"></textarea>
+                                               <div class="btn"><button class="cantact-btn ui-btn">Отправить</button></div>
+                                             </form>
+                                                    
                                              </div>
-                                       </form>
-                                             <textarea class="contact-message" placeholder="Сообщение"></textarea>
-                                         <div class="btn"><a class="cantact-btn ui-btn">Отправить</a></div> 
-                                       </div>
+                                          </div>
                                     </div>
+                                    
                                     </div>
                            </div>
                          

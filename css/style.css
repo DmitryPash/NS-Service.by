@@ -289,7 +289,6 @@ button {
   text-align: center;
   justify-content: center;
   transition: all 0.3s ease;
-  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   text-decoration: none;
 }
@@ -461,7 +460,6 @@ button {
 .catalog-items-ns-2 {
   padding-right: 80px;
   overflow: hidden;
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   transition: all 0.2s ease;
@@ -485,7 +483,6 @@ button {
   padding: 80px 20px 35px;
   box-shadow: 4px 5px 20px rgb(0 0 0 / 14%);
   margin-bottom: 36px;
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   transition: all 0.8s ease;
   cursor: pointer;
@@ -503,7 +500,6 @@ button {
   min-height: 120px;
   box-shadow: 4px 5px 20px rgb(0 0 0 / 14%);
   margin-bottom: 36px;
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   transition: all 0.8s ease;
   cursor: pointer;
@@ -624,7 +620,6 @@ button {
 .recommend-cards {
   width: 100%;
   /* display: none; */
-  font-family: "Open Sans", sans-serif;
 }
 
 /* .recommend-cards:target {
@@ -1013,7 +1008,6 @@ button {
 
 .chainsaw-parts-h2 {
   color: #444962;
-  margin-bottom: 70px;
   font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1096,8 +1090,6 @@ button {
 }
 
 .perf-list-input input::placeholder {
-  text-align: center;
-  letter-spacing: 3px;
   color: #bebebe;
 }
 
@@ -1110,6 +1102,7 @@ button {
   border-radius: 10px;
   padding-left: 50px;
   padding-right: 50px;
+  text-align: center;
 }
 .perf-list-contact a {
   color: #7f7f7f;
@@ -1271,7 +1264,6 @@ button {
 @media (max-width: 1460px) {
   .container {
     max-width: 1200px;
-    padding: 0 15px;
   }
 
   .header-operator .number {
@@ -1983,7 +1975,28 @@ button {
   }
 }
 
-/* BURGER */
+@media (max-width: 1500px) {
+  .header-clock {
+    padding-right: 0;
+  }
+  .clock-content {
+    margin-bottom: 20px;
+  }
+  .contact-btn {
+    margin-bottom: 25px;
+  }
+  .header-clock iframe {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1170px) {
+  .footer-menu-title.ui-righted {
+    text-align: left;
+  }
+}/* 1170px */
+
+
 @media (max-width: 1024px) {
   .nav .wrapper {
     max-width: 100%;
@@ -1992,7 +2005,6 @@ button {
   }
   .container {
     max-width: 100%;
-    /* padding: 0 15px; */
   }
 
   .header-mob-logo {
@@ -2021,7 +2033,6 @@ button {
   }
 
   .header-content {
-    /* display: none; */
     padding: 0;
   }
   .header-logo,
@@ -2043,11 +2054,9 @@ button {
   .recommend-tabs a {
     font-size: 20px;
   }
-  /* Chainsaw-part */
   .items-ul ul li a {
     font-size: 20px;
   }
-  /* End Chainsaw-part */
   .category-catalog {
     font-size: 22px;
   }
@@ -2082,7 +2091,6 @@ button {
     opacity: 1;
   }
 }
-/* End Burger */
 
 @media (max-width: 970px) {
   .h3 {
@@ -2112,7 +2120,19 @@ button {
   .ns2-h2 {
     padding-top: 0px;
   }
-}
+
+  .catalog-chain1 .category-card {
+    min-height: 80px;
+    margin-bottom: 18px;
+    padding: 10px 15px;
+  }
+  .category-catalog {
+    font-size: 17px;
+  }
+  .recommend-tabs {
+    margin-bottom: 30px;
+  }
+}/* 992px */
 
 @media (max-width: 767px) {
   .catalog-items-text .chain-catalog {
@@ -2121,30 +2141,24 @@ button {
   .card-item-img {
     flex: 0 0 55px;
   }
-  /* Chainsaw-part */
   .items-ul ul li a {
     font-size: 18px;
   }
-  /* End Chainsaw-part */
-  .catalog-chain1 .catalog-items-text {
-    font-size: 12px;
+  .bcg-none ul li {
+    margin-bottom: 15px;
   }
   .card-item-img {
     padding-right: 0px;
   }
+  .catalog-items {
+    padding: 30px 15px;
+  }
 }
 
 @media (max-width: 576px) {
-  /* Chainsaw-part */
   .items-ul ul li a {
-    font-size: 14px;
+    font-size: 16px;
   }
-  /* End Chainsaw-part */
-  .footer-buy ul li:first-child {
-    padding-bottom: 5px;
-    padding-top: 25px;
-  }
-
   .recommend-item {
     margin-bottom: 15px;
     padding: 15px;
@@ -2180,6 +2194,16 @@ button {
   .card-item-img img {
     max-height: 45px;
   }
+  .catalog-items {
+    margin-bottom: 18px;
+    min-height: 0;
+  }
+  .perf-list {
+    padding: 35px 15px;
+  }
+  .perf-list-input input {
+    width: 100%;
+  }
 } /*-- 480 -- */
 
 @media (max-width: 420px) {
@@ -2196,11 +2220,7 @@ button {
 } /*-- 420 -- */
 
 @media (max-width: 398px) {
-  /* Chainsaw-part */
-  .items-ul ul li a {
-    font-size: 14px;
-  }
-  /* End Chainsaw-part */
+  
   .catalog-items-text {
     display: block;
   }
