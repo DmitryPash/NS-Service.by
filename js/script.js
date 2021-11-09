@@ -108,7 +108,7 @@ $(document).ready(function() {
       
 if (document.querySelector('.ui-phone-mask')) {
   FARBA.lazyLibraryLoad(
-    'https://cdnjs.cloudflare.com/ajax/libs/imask/6.2.2/imask.min.js',
+    '//cdnjs.cloudflare.com/ajax/libs/imask/6.2.2/imask.min.js',
     '',
     () => {
       const masks = document.querySelectorAll('.ui-phone-mask')
@@ -119,6 +119,19 @@ if (document.querySelector('.ui-phone-mask')) {
       masks.forEach(el => {
         IMask(el, maskOptions)
       })
+    }
+  )
+}
+
+
+if (document.querySelector('.ui-slick')) {
+  FARBA.lazyLibraryLoad(
+    '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js',
+    '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css',
+    () => {
+      $('.ui-slick').slick({
+        dots: true
+      }); 
     }
   )
 }
