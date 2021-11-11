@@ -839,10 +839,6 @@ a.header-phone-link:hover {
   border-bottom: 1px solid #c29a0d;
 }
 
-.contact-number {
-  color: #77777b;
-}
-
 .contact-btn {
   display: flex;
   align-items: center;
