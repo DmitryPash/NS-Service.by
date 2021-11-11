@@ -599,8 +599,6 @@ a.header-phone-link:hover {
   line-height: normal;
 }
 
-
-
 .recommend-list {
   margin-bottom: 65px;
 }
@@ -890,7 +888,6 @@ a.header-phone-link:hover {
   margin-bottom: 20px;
 }
 
-
 .pay-css {
   text-align: end;
   white-space: nowrap;
@@ -1056,7 +1053,7 @@ a.header-phone-link:hover {
   opacity: 0.25;
   z-index: 9;
   cursor: pointer;
-  transition: opacity .2s;
+  transition: opacity 0.2s;
 }
 .slick-slider:hover .slick-arrow {
   opacity: 0.65;
@@ -1083,7 +1080,7 @@ a.header-phone-link:hover {
   right: 0;
   text-align: center;
   line-height: 48px;
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
   font-family: "Font Awesome 5 Free";
   font-style: normal;
@@ -1119,7 +1116,7 @@ a.header-phone-link:hover {
   border: 0;
   border-radius: 12px;
   font-size: 12px;
-  color: #FFF;
+  color: #fff;
   background: #fde037;
   opacity: 0.75;
   cursor: pointer;
@@ -1152,7 +1149,7 @@ a.header-phone-link:hover {
   min-height: 100%;
   object-fit: cover;
   object-position: center;
-  transition: transform .3s;
+  transition: transform 0.3s;
   will-change: transform;
 }
 .grid-card-title {
@@ -1161,7 +1158,7 @@ a.header-phone-link:hover {
   bottom: 25px;
   right: 15px;
   z-index: 1;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   font-size: 24px;
   line-height: 1.2;
@@ -1175,8 +1172,8 @@ a.header-phone-link:hover {
   right: 0;
   top: 35%;
   opacity: 0.8;
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.95));
-  transition: opacity .3s;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.95));
+  transition: opacity 0.3s;
 }
 .grid-card:hover .grid-card-img img {
   transform: translate3d(-50%, -50%, 0) scale(1.05);
@@ -1184,8 +1181,6 @@ a.header-phone-link:hover {
 .grid-card:hover:after {
   opacity: 1;
 }
-
-
 
 .bord-logo {
   display: flex;
@@ -1343,7 +1338,81 @@ a.header-phone-link:hover {
 
 /* END STARS */
 /* End Footer */
+/* Sidebar */
+.fixed-links {
+  position: fixed;
+  box-shadow: 0px 0px 12px rgb(0 0 0 / 36%);
+  background: #fde037;
+  top: 25%;
+  right: 0%;
+  width: 45px;
+  height: auto;
+  z-index: 999;
+}
+.fixed-links a:last-child {
+  border: none;
+}
+.fixed-links a {
+  text-decoration: none;
+}
+.fixed-links-card {
+  display: block;
+  width: 45px;
+  height: auto;
+  padding: 14px 0px 10px 0px;
+  /* display: table-cell; */
+  vertical-align: middle;
+  margin: 0px;
+  border-bottom: 1px solid #fff46b;
+  transition: 0.3s ease;
+}
+.fixed-links-card:hover {
+  background: #9256017c;
+  color: #fff;
+}
+.fixed-links-card:hover i {
+  color: #fff;
+}
+.fixed-links-card i {
+  font-size: 30px;
+  color: #bea201;
+  display: table;
+  margin: 0px auto;
+  padding: 0px;
+}
 
+.fixed-links-card .circle {
+  height: auto;
+  display: table;
+  margin: 0px auto;
+  padding: 8px 0px 0px 0px;
+}
+
+.circle-bcg {
+  height: 24px;
+  display: block;
+  margin: 0px;
+  padding: 0px 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  line-height: 24px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  border-radius: 12px;
+  background: #575b71;
+}
+.chart-bcg {
+  background: #9b9db9;
+}
+.heart-bcg {
+  background: #fff;
+  color: #000000;
+}
+
+/* End Sidebar */
 .item-add-button input {
   height: 100%;
   width: 23px;
@@ -2142,8 +2211,7 @@ a.header-phone-link:hover {
   .footer-menu-title.ui-righted {
     text-align: left;
   }
-}/* 1170px */
-
+} /* 1170px */
 
 @media (max-width: 1024px) {
   .header-top {
@@ -2284,7 +2352,7 @@ a.header-phone-link:hover {
   .recommend-tabs {
     margin-bottom: 30px;
   }
-}/* 992px */
+} /* 992px */
 
 @media (max-width: 767px) {
   .catalog-items-text .chain-catalog {
@@ -2372,7 +2440,6 @@ a.header-phone-link:hover {
 } /*-- 420 -- */
 
 @media (max-width: 398px) {
-  
   .catalog-items-text {
     display: block;
   }
