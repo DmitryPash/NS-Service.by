@@ -828,6 +828,16 @@ a.header-phone-link:hover {
 .contact-txt {
   margin-bottom: 35px;
 }
+.contact-tel {
+  margin-bottom: 35px;
+}
+.clock-content i {
+  color: #cc9900;
+}
+.contact-number {
+  color: #c29a0d;
+  border-bottom: 1px solid #c29a0d;
+}
 
 .contact-number {
   color: #77777b;
