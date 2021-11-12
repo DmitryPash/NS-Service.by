@@ -683,16 +683,33 @@ a.header-phone-link:hover {
 }
 .item-bar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /* End new recomend */
+/* Style for new button */
+.ui-btn-new i {
+  color: #6e6f72;
+  padding-right: 10px;
+}
+.item-bar-a {
+  border: 1px solid #dee0ee;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+.item-bar-a i {
+  color: #dee0ee;
+}
+
+/* End style for new button */
 .recommend-item {
-  text-align: center;
   border: 1px solid #e8e8e8;
   margin-bottom: 38px;
   padding: 45px 20px 40px;
 }
 
 .recommend-img {
+  text-align: center;
   height: 160px;
   margin-bottom: 50px;
 }
@@ -722,7 +739,7 @@ a.header-phone-link:hover {
   font-size: 13px;
   color: #515568;
 }
-
+/* 
 .item-price {
   margin-right: auto;
   font-weight: 800;
@@ -733,12 +750,11 @@ a.header-phone-link:hover {
 }
 
 .item-price span {
-  /* margin-right: auto; */
   font-weight: 900;
   font-size: 14px;
   opacity: 0.8;
   margin-left: 10px;
-}
+} */
 
 .item-add {
   display: flex;
@@ -754,8 +770,11 @@ a.header-phone-link:hover {
   justify-content: center;
   height: 25px;
   width: 75px;
-  border: 2px solid silver;
-  border-radius: 20px;
+  border: 2px solid #dee0ee;
+  margin-right: 0;
+  margin-left: auto;
+
+  /* border-radius: 20px; */
 }
 
 .btn-minus {
@@ -808,11 +827,14 @@ a.header-phone-link:hover {
 }
 
 .item-add-button button {
-  background-color: white;
+  background-color: #dee0ee;
   border: none;
   font-size: 10px;
   width: 35%;
   height: 100%;
+}
+.item-add-button button:hover {
+  background-color: #575b71;
 }
 
 .item-add-button .input:active,
