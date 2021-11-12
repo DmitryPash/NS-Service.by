@@ -201,7 +201,7 @@ body {
   display: inline-block;
   position: relative;
   font-size: 20px;
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 .clock-contet-img {
@@ -374,7 +374,7 @@ a.header-phone-link:hover {
   margin-bottom: 100px;
 }
 .catalog-chain1 {
-  margin-top: 60px;
+  /* margin-top: 60px; */
   margin-bottom: 100px;
 }
 
@@ -1349,7 +1349,8 @@ a.header-phone-link:hover {
   position: fixed;
   box-shadow: 0px 0px 12px rgb(0 0 0 / 36%);
   background: #fde037;
-  top: 25%;
+  top: 50%;
+  transform: translate(0, -50%);
   right: 0%;
   width: 45px;
   height: auto;
@@ -1367,7 +1368,7 @@ a.header-phone-link:hover {
   height: auto;
   padding: 14px 0px 10px 0px;
   /* display: table-cell; */
-  vertical-align: middle;
+  /* vertical-align: middle; */
   margin: 0px;
   border-bottom: 1px solid #fff46b;
   transition: 0.3s ease;
