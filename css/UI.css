@@ -86,6 +86,34 @@ li {
 .ui-btn:hover {
   background-color: #e6b506;
 }
+/* New BTN */
+.ui-btn-new {
+  display: inline-block;
+  vertical-align: middle;
+  height: 35px;
+  max-width: 100%;
+  line-height: 38px;
+  background-color: #fde037;
+  padding: 0px 30px;
+  border-radius: 4px;
+
+  text-align: center;
+  color: #402a1d;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: 0;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.ui-btn-new:hover {
+  background-color: #e6b506;
+}
+/* End new BTN */
 
 .ui-btn-big {
   display: inline-block;
